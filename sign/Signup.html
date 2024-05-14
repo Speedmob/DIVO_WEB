@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="validation.js" defer></script>
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Registration</h1>
+            <form action="process_signup.php" id="register" method="POST" novalidate>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="confirm Your Password" name="conf_password" id="confirm">
+                </div>
+
+                    <input type="submit" value="Register" id="mysubmit">
+            </form>
+            <span>
+                Already have an account?
+                <a href="#">Login</a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
